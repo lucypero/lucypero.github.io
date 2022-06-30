@@ -1,9 +1,6 @@
 ---
 layout: article
-titles:
-  # @start locale config
-  en      : &EN       About Lucy
-  # @end locale config
+title: About Lucy
 key: page-about
 ---
 
@@ -27,6 +24,7 @@ Check out my [Github profile](https://github.com/lucypero/) maybe
 - Hardcore gaminggg (keep reading)
 - Game of Thrones :crown:
 - Coffee (french press) (black) :coffee:
+- Everything Everywhere All At Once - *what a good movie*
 
 ## What I'm playing at the moment
 

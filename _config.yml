@@ -223,3 +223,7 @@ plugins:
   - jekyll-paginate
   - jekyll-sitemap
   - jemoji
+
+collections:
+  showcase_posts:
+    output: true
