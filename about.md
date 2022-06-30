@@ -16,7 +16,7 @@ I find cool or interesting, and for showing off some of the stuff I'm working on
 
 Check out my [Github profile](https://github.com/lucypero/) maybe
 
-## Things that I'm into right now:
+## Things that I'm into right now
 
 - Rust, obs :relieved: :nail_care: :crab:
 - *When I say "Rust", I mean the programming language. And there's nothing else called "Rust" in this world so
