@@ -1,7 +1,8 @@
 ---
 layout: article
 title: About Lucy
-key: page-about
+permalink: /about.html
+key: about
 ---
 
 ![profile pic](./assets/lucy/cute-avatar.png)
@@ -19,8 +20,9 @@ Check out my [Github profile](https://github.com/lucypero/) maybe
 
 - Rust, obs :relieved: :nail_care: :crab:
 - *When I say "Rust", I mean the programming language. And there's nothing else called "Rust" in this world so
-  I don't know why I'm saying this.*
+  I don't know why I'm saying this. :relieved:*
 - [wgpu](https://github.com/gfx-rs/wgpu)
+- Clion - *best IDE ever (with the vim plugin, of course)*
 - Hardcore gaminggg (keep reading)
 - Game of Thrones :crown:
 - Coffee (french press) (black) :coffee:
