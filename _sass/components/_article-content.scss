@@ -17,7 +17,7 @@
       margin-top: map-get($spacers, 3);
     }
     & > .anchor {
-      @include link-colors($border-color, $main-color-1);
+      @include link-colors(var(--border-color), var(--main-color-1));
       margin-left: map-get($spacers, 1);
       text-decoration: none;
       visibility: hidden;
@@ -45,8 +45,8 @@
   blockquote {
     padding-left: map-get($spacers, 3);
     font-size: map-get($base, font-size-sm);
-    color: $text-color-l;
-    @include split-line(left, 4px, $border-color);
+    color: var(--text-color-l);
+    @include split-line(left, 4px, var(--border-color));
     p {
       margin: map-get($spacers, 2) 0;
     }
@@ -73,7 +73,7 @@
   }
   code {
     padding: map-get($spacers, 1) map-get($spacers, 2);
-    background-color: $text-background-color;
+    background-color: var(--text-background-color);
     border-radius: map-get($base, border-radius);
     span {
       padding: 0;
@@ -101,7 +101,7 @@
     & > pre {
       padding: map-get($spacers, 3) 0 map-get($spacers, 3) map-get($spacers, 3);
       margin: 0;
-      background-color: $text-background-color;
+      background-color: var(--text-background-color);
       border-radius: map-get($base, border-radius);
       & > code {
         display: block;
@@ -113,11 +113,11 @@
       display: block;
       padding: map-get($spacers, 2) map-get($spacers, 3) map-get($spacers, 2) 0;
       font-weight: map-get($base, font-weight-bold);
-      color: $decorate-color;
+      color: var(--decorate-color);
       text-align: right;
       text-transform: uppercase;
       content: attr(data-lang);
-      background-color: $text-background-color;
+      background-color: var(--text-background-color);
       border-top-left-radius: map-get($base, border-radius);
       border-top-right-radius: map-get($base, border-radius);
     }
@@ -155,7 +155,7 @@
               border-radius: 0;
               @include overflow(auto);
               &.lineno {
-                color: $text-color-l;
+                color: var(--text-color-l);
                 @include user-select(none);
               }
             }
@@ -208,11 +208,11 @@
     border-collapse: collapse;
     @include overflow(auto);
     thead, tfoot {
-      background-color: $text-background-color;
+      background-color: var(--text-background-color);
     }
     th, td {
       padding: map-get($spacers, 2);
-      border: 1px solid $border-color-l;
+      border: 1px solid var(--border-color-l);
     }
     th {
       font-weight: map-get($base, font-weight-bold);

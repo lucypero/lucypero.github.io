@@ -1,74 +1,151 @@
-///
-// Skin: Dark
-// Author: Tian Qi
-// Email: kitian616@outlook.com
-///
+@import "./highlight/tomorrow/night";
 
 // main colors
-$main-color-1: #f7bfff;
-$text-color-1:     rgba(#fff, .8);
 
-$main-color-2:     #ff006a;
-$text-color-2:     rgba(#fff, .8);
 
-$main-color-3:     #202020;
-$text-color-3:     rgba(#fff, .8);
+:root {
 
-$main-color-theme-light: rgba(#000, .8);
-$main-color-theme-dark:  rgba(#fff, .8);
+  --main-color-1: #FE7F9B;
+  --text-color-1: rgba(255, 255, 255, 0.8);
 
-// page background
-$background-color: #121212;
+  // i don't know where this is used
+  --main-color-2: #ff006a;
+  --text-color-2: rgba(255, 255, 255, .8);
 
-// text colors
-$text-color-theme-light-d: #000;
-$text-color-theme-light:   #222;
-$text-color-theme-light-l: #888;
+  // header and footer colors
+  --main-color-3: #FFA6AF;
+  --text-color-3: #FEEEEC;
+  --header-link-color: #feeeec;
 
-$text-color-theme-dark-d:  rgba(#fff, .8);
-$text-color-theme-dark:    rgba(#fff, .7);
-$text-color-theme-dark-l:  rgba(#fff, .5);
+  --main-color-theme-light: rgba(0, 0, 0, .8);
+  --main-color-theme-dark: rgba(255, 255, 255, .8);
 
-$text-color-d:     $text-color-theme-dark-d;
-$text-color:       $text-color-theme-dark;
-$text-color-l:     $text-color-theme-dark-l;
+  // page background
+  --background-color: #feeeec;
 
-$text-background-color: rgba(#fff, .05);
+  // text colors
+  --text-color-theme-light-d: #000;
+  --text-color-theme-light: #222;
+  --text-color-theme-light-l: #888;
 
-// header and footer colors
-$header-text-color: $text-color-3;
-$header-background: $main-color-3;
+  --text-color-theme-dark: rgba(44, 44, 44, 0.7);
+  --text-color-theme-dark-d: var(--text-color-theme-dark);
+  --text-color-theme-dark-l: var(--text-color-theme-dark);
 
-$footer-text-color: $text-color-3;
-$footer-background: $main-color-3;
+  --text-color-d: var(--text-color-theme-dark-d);
+  --text-color: var(--text-color-theme-dark);
+  --text-color-l: var(--text-color-theme-dark-l);
 
-// border and shadow colors
-$border-color:     mix(#fff, $background-color, 20%);
-$border-color-l:   mix(#fff, $background-color, 10%);
-$decorate-color:   rgba(#fff, .1);
-$mask-color:       rgba(#000, .9);
-$select-color:     rgba($main-color-1, .5);
+  --text-background-color: rgba(255, 255, 255, .05);
+
+  // header and footer colors
+  --header-text-color: var(--text-color-3);
+  --header-background: var(--main-color-3);
+
+  --footer-text-color: var(--text-color-3);
+  --footer-background: var(--main-color-3);
+
+  // border and shadow colors
+  --border-color: rgba(44, 44, 44, 0.7);
+  --border-color-l: rgba(44, 44, 44, 0.7);
+  --decorate-color: rgba(255, 255, 255, .1);
+  --mask-color: rgba(0, 0, 0, .9);
+  --select-color: rgba(254, 127, 155, 0.43);
+
+  //highlight
+  --highlight-background   : #f7f7f7;
+  --highlight-foreground   : #4d4d4c;
+  --highlight-comment      : #8e908c;
+  --highlight-red          : #c82829;
+  --highlight-orange       : #f5871f;
+  --highlight-yellow       : #eab700;
+  --highlight-green        : #718c00;
+  --highlight-aqua         : #3e999f;
+  --highlight-blue         : #4271ae;
+  --highlight-purple       : #8959a8;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+
+    --main-color-1: #f7bfff;
+    --text-color-1: rgba(255, 255, 255, 0.8);
+
+    --main-color-2: #ff006a;
+    --text-color-2: rgba(255, 255, 255, .8);
+
+    // header-footer colors
+    --main-color-3: #202020;
+    --text-color-3: rgba(255, 255, 255, .8);
+    --header-link-color: var(--main-color-1);
+
+    --main-color-theme-light: rgba(0, 0, 0, .8);
+    --main-color-theme-dark: rgba(255, 255, 255, .8);
+
+    // page background
+    --background-color: #121212;
+
+    // text colors
+    --text-color-theme-light-d: #000;
+    --text-color-theme-light: #222;
+    --text-color-theme-light-l: #888;
+
+    --text-color-theme-dark-d: rgba(255, 255, 255, .8);
+    --text-color-theme-dark: rgba(255, 255, 255, .7);
+    --text-color-theme-dark-l: rgba(255, 255, 255, .5);
+
+    --text-color-d: var(--text-color-theme-dark-d);
+    --text-color: var(--text-color-theme-dark);
+    --text-color-l: var(--text-color-theme-dark-l);
+
+    --text-background-color: rgba(255, 255, 255, .05);
+
+    // header and footer colors
+    --header-text-color: var(--text-color-3);
+    --header-background: var(--main-color-3);
+
+    --footer-text-color: var(--text-color-3);
+    --footer-background: var(--main-color-3);
+
+    // border and shadow colors
+    --border-color: #181818;
+    --border-color-l: #181818;
+    --decorate-color: rgba(255, 255, 255, .1);
+    --mask-color: rgba(0, 0, 0, .9);
+    --select-color: rgba(247, 191, 255, 0.8);
+
+    // highlight
+    --highlight-background   : #1d1f21;
+    --highlight-foreground   : #c5c8c6;
+    --highlight-comment      : #969896;
+    --highlight-red          : #c66;
+    --highlight-orange       : #de935f;
+    --highlight-yellow       : #f0c674;
+    --highlight-green        : #b5bd68;
+    --highlight-aqua         : #ffe7ad;
+    --highlight-blue         : #ffe7ad;
+    --highlight-purple       : #f7bfff;
+  }
+}
 
 // function colors
-$green:           #5baa34;
-$blue:            #1c7cd4;
-$yellow:          #c9771f;
-$red:             #da3d45;
+$green: #5baa34;
+$blue: #1c7cd4;
+$yellow: #c9771f;
+$red: #da3d45;
 $text-color-function: rgba(#fff, .8);
 
 // logo colors
-$mail-color:       #0072c5;
-$facebook-color:   #4267b2;
-$twitter-color:    #1da1f2;
-$weibo-color:      #e6162d;
-$google-plus-color:#ea4335;
-$telegram-color:   #32afed;
-$medium-color:     #000;
-$zhihu-color:      #0084ff;
-$douban-color:     #42bd56;
-$linkedin-color:   #1074af;
-$github-color:     #000;
-$npm-color:        #fff;
+$mail-color: #0072c5;
+$facebook-color: #4267b2;
+$twitter-color: #1da1f2;
+$weibo-color: #e6162d;
+$google-plus-color: #ea4335;
+$telegram-color: #32afed;
+$medium-color: #000;
+$zhihu-color: #0084ff;
+$douban-color: #42bd56;
+$linkedin-color: #1074af;
+$github-color: #000;
+$npm-color: #fff;
 
-// highlight colors
-@import "skins/highlight/tomorrow-night";

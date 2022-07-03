@@ -3,7 +3,7 @@
     $direction: top;
   }
   @if $color == default {
-    $color: $border-color-l;
+    $color: var(--border-color-l);
   }
   @if $width == default {
     $width: 1px;

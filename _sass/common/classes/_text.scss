@@ -1,31 +1,31 @@
 @mixin text-light {
-  color: $text-color-theme-light;
+  color: var(--text-color-theme-light);
   h1, h2, h3 {
-    color: $text-color-theme-light-d;
+    color: var(--text-color-theme-light-d);
   }
   h4, h5 {
-    color: $text-color-theme-light;
+    color: var(--text-color-theme-light);
   }
   h6 {
-    color: $text-color-theme-light-l;
+    color: var(--text-color-theme-light)-l;
   }
   a:not(.button) {
-    @include link-colors($text-color-theme-light, $main-color-1);
+    @include link-colors(var(--text-color-theme-light), var(--main-color-1));
   }
 }
 @mixin text-dark {
-  color: $text-color-theme-dark;
+  color: var(--text-color-theme-dark);
   h1, h2, h3 {
-    color: $text-color-theme-dark-d;
+    color: var(--text-color-theme-dark-d);
   }
   h4, h5 {
-    color: $text-color-theme-dark;
+    color: var(--text-color-theme-dark);
   }
   h6 {
-    color: $text-color-theme-dark-l;
+    color: var(--text-color-theme-dark-l);
   }
   a:not(.button) {
-    @include link-colors($text-color-theme-dark, $main-color-1);
+    @include link-colors(var(--text-color-theme-dark), var(--main-color-1));
   }
 }
 

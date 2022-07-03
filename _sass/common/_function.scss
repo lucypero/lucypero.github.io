@@ -1,11 +1,3 @@
-@function get-color-theme($color) {
-  @if lightness($color) < 15% {
-    @return "dark";
-  } @else {
-    @return "light";
-  }
-}
-
 @function breakpoint-infix($name, $breakpoints: default) {
   @if $breakpoints == default {
     $breakpoints: $responsive;

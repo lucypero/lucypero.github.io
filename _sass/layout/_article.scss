@@ -10,11 +10,11 @@
     width: 50%;
     & > span {
       font-weight: map-get($base, font-weight-bold);
-      color: $text-color-l;
+      color: var(--text-color-l);
     }
     & > a {
       display: block;
-      @include link-colors($text-color, $main-color-1);
+      @include link-colors(var(--text-color), var(--main-color-1));
     }
   }
   & > .previous {

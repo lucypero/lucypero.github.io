@@ -3,10 +3,10 @@
     $z-index: map-get($z-indexes, modal);
   }
   @if $color == default {
-    $color: $text-color-theme-dark;
+    $color: var(--text-color-theme-dark);
   }
   @if $background-color == default {
-    $background-color: $mask-color;
+    --background-color: var(--mask-color);
   }
   position: fixed;
   top: 0;
@@ -16,7 +16,7 @@
   height: 100%;
   color: $color;
   touch-action: none;
-  background-color: $background-color;
+  background-color: var(--background-color);
   opacity: 0;
   @include transform(translate(100%, 0));
   @include transition(#{opacity map-get($animation, duration) map-get($animation, timing-function),
