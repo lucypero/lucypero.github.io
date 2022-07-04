@@ -71,8 +71,9 @@
     margin-top: -20px;
     vertical-align: middle;
     @include media-breakpoint-down(md) {
-      width: map-get($base, font-size-h4) * 1.2;
-      height: map-get($base, font-size-h4) * 1.2;
+      margin: 0 -10px -10px -25px;
+      width: 5rem;
+      height: 5rem;
     }
   }
   & > a {
@@ -81,6 +82,8 @@
     font-size: 1.5rem;
     @include media-breakpoint-down(md) {
       font-size: map-get($base, font-size-h4-small);
+      padding-top: 24px;
+      margin-left: -10px;
     }
   }
 }
