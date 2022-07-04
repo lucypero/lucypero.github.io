@@ -11,11 +11,6 @@
       @include flex-direction(column);
     }
   }
-
-  a > img {
-    vertical-align: middle;
-    padding-right: 10px;
-  }
 }
 
 .header--dark {
@@ -69,9 +64,11 @@
   @include flexbox();
   @include align-items(center);
   & > svg {
-    width: map-get($base, font-size-h4) * 1.6;
-    height: map-get($base, font-size-h4) * 1.6;
-    margin-right: map-get($spacers, 3);
+    width: 9rem;
+    height: 9rem;
+    margin-right: -65px;
+    margin-left: -50px;
+    margin-top: -20px;
     vertical-align: middle;
     @include media-breakpoint-down(md) {
       width: map-get($base, font-size-h4) * 1.2;
@@ -79,8 +76,9 @@
     }
   }
   & > a {
+    padding-top: 24px;
     display: inline-block;
-    font-size: map-get($base, font-size-h4);
+    font-size: 1.5rem;
     @include media-breakpoint-down(md) {
       font-size: map-get($base, font-size-h4-small);
     }

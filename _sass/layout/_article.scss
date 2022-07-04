@@ -5,15 +5,16 @@
   padding-top: map-get($spacers, 3);
   margin: map-get($spacers, 4) 0 map-get($spacers, 3) 0;
   word-wrap: break-word;
-  @include split-line(top, 4px);
+  @include split-line(top, 1px);
   & > .previous, & > .next {
     width: 50%;
     & > span {
-      font-weight: map-get($base, font-weight-bold);
+      font-weight: map-get($base, font-weight);
       color: var(--text-color-l);
     }
     & > a {
       display: block;
+      font-weight: map-get($base, font-weight);
       @include link-colors(var(--text-color), var(--main-color-1));
     }
   }

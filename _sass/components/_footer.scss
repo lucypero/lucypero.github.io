@@ -3,6 +3,8 @@
  */
 
 .footer {
+  padding-top: 0.3rem;
+  padding-bottom: 0.1rem;
   @include flexbox();
   @include align-items(center);
   color: var(--footer-text-color);
