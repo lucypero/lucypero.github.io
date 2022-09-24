@@ -7,7 +7,7 @@ I will show you how to have a great time programming in Windows. Personally, I'd
 
 <!--more-->
 
-After a few years after switching from Linux, I was forced to learn how to develop on Windows without being miserable. At first I thought it was going to be hell but after a while, I realized it's actually pretty good. Things actually have a much higher chance of working than on Linux, which is great. GUI's in general are much better too.
+A few years after switching from Linux, I was forced to learn how to develop on Windows without being miserable. At first I thought it was going to be hell but after a while, I realized it's actually pretty good. Things actually have a much higher chance of working than on Linux, which is great. GUI's in general are much better too.
 
 This article will be about showing you all the things I use to make my programmer experience on Windows enjoyable. I will split all the things I use by category:
 
