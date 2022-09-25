@@ -3,6 +3,8 @@ title: "Programming In Windows and how to make it Great"
 permalink: /blog/windows-development.html
 ---
 
+*Last Update: 2022-09-25*
+
 I will show you how to have a great time programming in Windows. Personally, I'd say the experience is much better than on Linux after you learn some of the tricks.
 
 <!--more-->
@@ -41,7 +43,7 @@ Most importantly, it is super duper fast. Since nushell, I have not looked back 
 
 ### CLI programs
 
-I strongly recommend `scoop` for package management (mentioned later). There's also `fzf` and `lf`.
+I strongly recommend `scoop` for package management (mentioned later). There's also `fzf` and `lf`. `lazygit` for a nice Git CLI.
 
 ### Package management: Scoop
 
@@ -70,3 +72,5 @@ For PC Gaming, there's really nothing else. And for casual use, it's pretty good
 ## Final Thoughts
 
 I will probably modify and add to this article as time goes on. For now I think this covers most things. Enjoy your time programming in Windows. You will see that it's not that bad after all.
+
+Here are my [configuration files](https://github.com/lucypero/config-files-windows) for Windows and all the programs I use. You might find them useful. 
