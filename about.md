@@ -28,6 +28,8 @@ Check out my [Github profile](https://github.com/lucypero/) maybe
 
 ## What I'm playing at the moment
 
-- **The Legend of Dragoon (PSX) (1999)** 
+- **Final Fantasy VII (1997)** 
 
-    This is a really long game as I'm not used to the average length of a JRPG. I really have to slow down my brain's clock speed because i'm not used to slow turn based combat games like this one, so it is challenging to play for that reason. But I really enjoy it at times and I'm slowly getting used to playing JRPGs which was my goal.
+    i felt like this was one of the first games i should play, for my jrpg arc. i am mostly doing this for my insane idea of being more "cultured" in terms of the history of videogames, and more specifically jrpg's.
+    but somehow i found a way to enjoy this really old and buggy game: lots of cheats activated, no random encounters (worst idea in game design), a 60 fps hack, and 2x play speed. this makes it so much more enjoyable and makes it
+    way easier to enjoy the story. this might be my standard weapon for tackling all future old jrpg's.
