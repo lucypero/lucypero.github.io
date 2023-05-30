@@ -1,5 +1,5 @@
 ---
-title: "Gaming Update and my JRPG arc"
+title: "May Gaming Update and my JRPG arc"
 permalink: /blog/23-05-gaming-update.html
 ---
 
