@@ -1,6 +1,9 @@
 header:
   - title: Blog
     url: /
+  - title: Showcase
+    url: /showcase.html
+    key: showcase
   - title: About
     key: about
     url: /about.html

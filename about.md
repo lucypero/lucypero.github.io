@@ -7,7 +7,7 @@ key: about
 
 ![profile pic](./assets/lucy/cute-avatar.png)
 
-*Last Update: 2023-02-27*
+*Last Update: 2023-11-21*
 
 ## Hi guys!
 
@@ -19,3 +19,7 @@ I find cool or interesting, and for showing off some of the stuff I'm working on
 I'm also into video games quite a lot. 
 
 Check out my [Github profile](https://github.com/lucypero/) maybe
+
+Also check out the game I released! Psycho Box.
+
+<iframe frameborder="0" src="https://itch.io/embed/2366585?dark=true" width="552" height="167"><a href="https://lucypero.itch.io/psycho-box">Psycho Box by Lucy</a></iframe>
