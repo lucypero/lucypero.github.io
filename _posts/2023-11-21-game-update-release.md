@@ -30,3 +30,10 @@ I will not abandon Psycho Box right away. I will fix basic things, and add some 
 I will also make the source code public, so I'm gonna have to rewrite some parts out of embarrassment, but nothing major 😛
 
 After Psycho Box I plan to re-learn Godot and get good at it, so I can prototype games much quicker than I did with this game. I'm excited about what the future might bring.
+
+
+## Update
+
+Here's the [source code](https://github.com/lucypero/psycho-box)
+
+And the [project article](../psycho-box.html)
