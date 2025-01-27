@@ -47,13 +47,13 @@ So yeah, I even wrote some design documents about what the game will be. Honestl
 
 Might as well show a little bit of what I managed to put together. I started this project as a 3D/2D game, where the environments are in 3D and the characters are 2D. Then, I coded a basic turn-based combat system. It was challenging but eventually I managed. It's pretty cool, imo. Here's a video where the player is in the overworld, initiates a battle, then ends the battle and back to the overworld:
 
-<video controls autoplay>
+<video controls>
   <source src="/assets/videos/jrpg-3d-but-2d.mp4" type="video/mp4">
 </video>
 
 Then I decided to go back to 2D, to make it easier for myself. I started working on the Overworld part of the game. Here's you talking to NPC's:
 
-<video controls autoplay>
+<video controls>
   <source src="/assets/videos/jrpg-talk.mp4" type="video/mp4">
 </video>
 
