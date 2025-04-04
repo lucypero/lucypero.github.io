@@ -46,7 +46,7 @@ For contrast, let's talk about all the tools and information Hollow Knight gives
 ![hollow-knight map in game](../assets/images/hollow-knight-map-ingame.jpg)
 *Pre-placed markers and custom markers for the player help a lot*
 
-The game has much more tools for orienting the player that are more suble than this, but this is just what came to mind. Nine Sols lacks all of this.
+The game has many more tools to orient the player that are more suble than this, but this is just what came to mind. Nine Sols lacks all of this.
 
 # What else could they have done?
 
