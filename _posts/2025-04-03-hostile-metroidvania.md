@@ -30,6 +30,32 @@ Of course, I have no evidence to back up this theory, and I'm not sure if I actu
 
 Whether intentional or not, the game's exploration design leads to a frustrating experience where the player feels deliberately starved of much needed information.
 
+# Failing where Hollow Knight succeeded
+
+For contrast, let's talk about all the tools and information Hollow Knight gives you to navigate its giant open-ended world. It's a very apt comparison as these games share the same "metroidvania/Dark Souls" genre.
+
+- Each biome is quite distinct in style and in enemy variety.
+- The way you acquire more maps and information within those maps has a clear progression, resulting in a clear understanding of what you already explored versus uncharted territory
+- Gamified navigational tools, like you can buy pins that automatically mark different things on the map. You can also buy custom pins that you can place wherever you want. This lets you keep a personalized record of your travels and what you've obsersed and haven't observed.
+- It is very clear when you can't proceed because you lack a certain ability. This could be a transition between biomes (easy to remember), or something very memorable and distinct, like a black flowing barrier.
+- The map view is much easier to understand.
+
+![hollow-knight map](../assets/images/hollow-knight-map.webp)
+*Well defined areas with their unique shapes and landmarks*
+
+![hollow-knight map in game](../assets/images/hollow-knight-map-ingame.jpg)
+*Pre-placed markers and custom markers for the player help a lot*
+
+The game has much more tools for orienting the player that are more suble than this, but this is just what came to mind. Nine Sols lacks all of this.
+
+# What else could they have done?
+
+I think I covered enough ideas in the Hollow Knight section, but here's a couple more:
+
+- NPC's informing you of your current quest, and talking to you about locations. Anything that could give you a clue about where you are and where you're going. Maybe new NPC's could call you with clues, or taunting you towards the next area.
+- Some kind of progression log. This could be not subtle at all, like a literal Quest Status section on the menu; or *something* in the Hub that informs you of your current progress, like maybe a canvas on a wall that is progressively filled.
+- A *better* map view. Differentiate explored areas with unexplored areas. Tempt me with a blacked out area in the map that I haven't gone to yet. Something. Just do *something* to help.
+
 # Rebutting some counter points
 
 ### "The AI guy tells you where to go"
