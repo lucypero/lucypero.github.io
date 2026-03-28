@@ -5,6 +5,9 @@
 {%- include snippets/get-article-title.html article=page -%}
 <title>{%- if __return -%}{{ __return }} - {{ site.title }}{%- else -%}{{ site.title }}{%- endif -%}</title>
 
+<script data-goatcounter="https://lucypero.goatcounter.com/count"
+        async src="//gc.zgo.at/count.js"></script>
+
 <meta name="description" content="{%- if page.excerpt -%}{{ page.excerpt | strip_html | strip_newlines | strip | truncate: 160 }}{%- else -%}{{ site.description }}{%- endif -%}">
 <link rel="canonical" href="{%- include snippets/page-url.html -%}">
 
