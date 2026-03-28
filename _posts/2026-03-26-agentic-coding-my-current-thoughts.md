@@ -11,7 +11,7 @@ We've been using Claude Code for about a month to make Unity games. The idea was
 
 # Early experiences
 
-When I started using this, I was amazed. I was so pro agentic coding. It seemed magical. You just tell it what to do and it does it. It accelerated work by so much. The problems only come later when the project grows and you need to start understanding the code. You should not let this tool do the thinking for you. You need to at least know how it's architecturing things. Otherwise, it's gonna bite you later. I also found it to not be consistent: It sometimes manages to solve relatively complex problems on the first try, no problem. But then it gets stuck with really simple tasks. It's really strange.
+When I started using this, I was amazed. I was so pro agentic coding. It seemed magical. You just tell it what to do and it does it. It accelerated work by so much. The problems only come later when the project grows and you need to start understanding the code. You should not let this tool do the thinking for you. You need to at least know how it's architecting things. Otherwise, it's gonna bite you later. I also found it to not be consistent: It sometimes manages to solve relatively complex problems on the first try, no problem. But then it gets stuck with really simple tasks. It's really strange.
 
 # The Alignment Problem
 
@@ -31,13 +31,13 @@ I found that it often writes code in a very unnecessarily convoluted way. Code t
 
 This tool is still very useful but it should be used with caution: Make sure you understand the high level view of the systems that you are making, at least. Read the code it writes. Order the AI to refactor it periodically so it's simpler.
 
-The fact that, in general, advocates of these tools never talk about the limitations of this technology is very concerning to me. No, they cannot replace an engineer (at least not me). It's just a tool with strenghts and weaknesses. It should always be seen as this, instead of some magical thing that replaces human minds.
+The fact that, in general, advocates of these tools never talk about the limitations of this technology is very concerning to me. No, they cannot replace an engineer (at least not me). It's just a tool with strengths and weaknesses. It should always be seen as this, instead of some magical thing that replaces human minds.
 
 # It's excellent for "grunt work" and tooling
 
-I found this tool to be most suitable for "boring" tasks. Create new scripts and prefabs. Handle commands. Write small scripts that do a very specific thing. It's great for that and it saves you so much time, for the things that you don't really want to do, are not intersesting, and don't impact the project's architecture in a high level way. It's also great for setting up the boilerplate for new systems, as long as you are the one deciding how this system is implemented.
+I found this tool to be most suitable for "boring" tasks. Create new scripts and prefabs. Handle commands. Write small scripts that do a very specific thing. It's great for that and it saves you so much time, for the things that you don't really want to do, are not interesting, and don't impact the project's architecture in a high level way. It's also great for setting up the boilerplate for new systems, as long as you are the one deciding how this system is implemented.
 
-One of its strenghs is tooling creation. We make it do custom tooling for our games in Unity, and it's fascinating. It often gets it right the first try. And we get really useful tooling to develop content in our games. Plus, it's code that doesn't have to ship to clients, so you can "let it rip" with minimal worrying. It's a perfect application for this technology.
+One of its strengths is tooling creation. We make it do custom tooling for our games in Unity, and it's fascinating. It often gets it right the first try. And we get really useful tooling to develop content in our games. Plus, it's code that doesn't have to ship to clients, so you can "let it rip" with minimal worrying. It's a perfect application for this technology.
 
 # Current aversion
 
