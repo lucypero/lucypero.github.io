@@ -1,5 +1,5 @@
 ---
-title: "Agentic Coding - My current thoughts"
+title: "Agentic Coding - It's not that simple."
 permalink: /blog/agentic-coding.html
 ---
 
