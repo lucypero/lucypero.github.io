@@ -1,13 +1,14 @@
 ---
 title: "Devil May Cry 5: Spectacle Over Depth"
 permalink: /blog/devil-may-cry5.html
+tags: gaming
 ---
 
 I just beat [DMC5](https://store.steampowered.com/app/601150/Devil_May_Cry_5/) and I have things to say... (spoilers)
 
 <!--more-->
 
-*Context: I played every DMC except for 2, but it was a really long time ago. I remember having a great time with all of them, even the reboot*
+_Context: I played every DMC except for 2, but it was a really long time ago. I remember having a great time with all of them, even the reboot_
 
 This game was really disappointing to me. It was received [extremely well](https://www.metacritic.com/game/playstation-5/devil-may-cry-5-special-edition) both by the media and the audience, so I was expecting something more. This game has little to offer other than polish, good graphics and cutscenes. The story is awful and barely existent; the only new character, V, is a cringey emo kid; and the gameplay consists of mashing Triangle and moving forward. If the combat were more interested, I would not mind all the other issues, but gameplay is the most important thing in a game, so... Let's talk about that a bit.
 

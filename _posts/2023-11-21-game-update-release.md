@@ -1,6 +1,7 @@
 ---
 title: "My First 3D Game - Update 3 - The game is out!"
 permalink: /blog/3d-game-update-3.html
+tags: game-dev programming c++
 ---
 
 This is a follow-up to [game update 2](./3d-game-update-2.html)
@@ -30,7 +31,6 @@ I will not abandon Psycho Box right away. I will fix basic things, and add some 
 I will also make the source code public, so I'm gonna have to rewrite some parts out of embarrassment, but nothing major 😛
 
 After Psycho Box I plan to re-learn Godot and get good at it, so I can prototype games much quicker than I did with this game. I'm excited about what the future might bring.
-
 
 ## Update
 

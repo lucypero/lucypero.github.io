@@ -1,9 +1,10 @@
 ---
 title: "May Gaming Update and my JRPG arc"
 permalink: /blog/23-05-gaming-update.html
+tags: gaming
 ---
 
-it's been a while since i haven't written anything here.. i'll talk a bit about my gaming *journey*
+it's been a while since i haven't written anything here.. i'll talk a bit about my gaming _journey_
 
 <!--more-->
 
@@ -32,26 +33,26 @@ the combat more interesting.
 
 so.. what jrpg's have i played so far?
 
-- **Final Fantasy VII Remake (2020)** 
+- **Final Fantasy VII Remake (2020)**
 
-    i really enjoyed this game. some of the best graphics i've seen. i get lost in Cloud's eyes constantly, it's insane. overall it was a really smooth, enjoyable experience. and it got me interested in the FF franchise. Looking forward to the sequel.
+  i really enjoyed this game. some of the best graphics i've seen. i get lost in Cloud's eyes constantly, it's insane. overall it was a really smooth, enjoyable experience. and it got me interested in the FF franchise. Looking forward to the sequel.
 
-- **Legend of Dragoon (1999)** 
+- **Legend of Dragoon (1999)**
 
-    my first classic jrpg. I struggled. a lot. beating this felt like a huge achievement of will, patience and perseverance. one thing i liked was that the combat had QTE's that u had to get right to do maximum damage. some dragoon magic spell animations were cool. the graphics were really good for a PS1 game. the story was silly, but ok. i'm just glad i was able to get through it. oh the localization was really really bad.. which is a pattern in jrpg's.
+  my first classic jrpg. I struggled. a lot. beating this felt like a huge achievement of will, patience and perseverance. one thing i liked was that the combat had QTE's that u had to get right to do maximum damage. some dragoon magic spell animations were cool. the graphics were really good for a PS1 game. the story was silly, but ok. i'm just glad i was able to get through it. oh the localization was really really bad.. which is a pattern in jrpg's.
 
-- **Final Fantasy X (2001)** 
+- **Final Fantasy X (2001)**
 
-    i think this game is really really good. super original world, interesting and cool characters. i loved the story. it was painful at times because of the gameplay and how long it is, but it wasn't that bad. i think it has a really
-    good combat system, considering it's turn based. also, Auron is so cool <3
+  i think this game is really really good. super original world, interesting and cool characters. i loved the story. it was painful at times because of the gameplay and how long it is, but it wasn't that bad. i think it has a really
+  good combat system, considering it's turn based. also, Auron is so cool <3
 
-- **Final Fantasy VII (1997) (in progress)** 
+- **Final Fantasy VII (1997) (in progress)**
 
-    i felt like this was one of the first games i should play, for my jrpg arc. but somehow i found a way to enjoy this really old and buggy game: lots of cheats activated,
-    no random encounters, a 60 fps hack, and 2x play speed. this makes it so much more enjoyable and makes it way easier to enjoy the story.
-    this might be my standard weapon for tackling all future old jrpg's.
+  i felt like this was one of the first games i should play, for my jrpg arc. but somehow i found a way to enjoy this really old and buggy game: lots of cheats activated,
+  no random encounters, a 60 fps hack, and 2x play speed. this makes it so much more enjoyable and makes it way easier to enjoy the story.
+  this might be my standard weapon for tackling all future old jrpg's.
 
-    The strongest point in this game by far is the clever, funny dialogue and the complex storyline. This is many leagues above legend of dragoon in terms of quality in writing and story. I am hooked, honestly. makes me more excited about the remake sequels. i just didn't want to deal with the gameplay this time, so the cheats mentioned above helped immensely. I'm just here for the story.
+  The strongest point in this game by far is the clever, funny dialogue and the complex storyline. This is many leagues above legend of dragoon in terms of quality in writing and story. I am hooked, honestly. makes me more excited about the remake sequels. i just didn't want to deal with the gameplay this time, so the cheats mentioned above helped immensely. I'm just here for the story.
 
 i'll be focusing on playing Final Fantasy mostly, i already bought most of the games. it is because it is the most culturally significant franchise, it seems.
 

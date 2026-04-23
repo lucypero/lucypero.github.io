@@ -1,11 +1,12 @@
 ---
 title: "The Anti-AI bro Problem"
 permalink: /blog/anti-ai.html
+tags: ai programming
 ---
 
 I brushed on the topic of "AI bros" on my [last article](./agentic-coding). Basically, there's a huge group of people online that do the following:
 
-- Make huge misrepresentations of the power of current AI tools, and what this tech is *inherently*.
+- Make huge misrepresentations of the power of current AI tools, and what this tech is _inherently_.
 - Make wild assumptions about the future of the technology.
 - The implied utter disrespect towards Art, engineering, and human expertise.
 - Cult-like behavior: If you slightly disagree with them about AI, you are cast out.
@@ -34,7 +35,7 @@ Please, don't be like that.
 
 # Personal experiences
 
-I had to take a break from social media because of how badly anti-ai bros treated me. They get very irrational and heated the moment that this topic is brought up. Even in programming circles. And it doesn't matter *how* you bring it up, or how well you express your arguments, or how much evidence you bring to the table. None of that matters. Like I said, their IQ drops by half the moment AI is brought up. They get into an irrational state of mind so there's nothing you can say to them to have a productive conversation.
+I had to take a break from social media because of how badly anti-ai bros treated me. They get very irrational and heated the moment that this topic is brought up. Even in programming circles. And it doesn't matter _how_ you bring it up, or how well you express your arguments, or how much evidence you bring to the table. None of that matters. Like I said, their IQ drops by half the moment AI is brought up. They get into an irrational state of mind so there's nothing you can say to them to have a productive conversation.
 
 It's very sad, as the consequences of this are: People will simply stop talking about these tools, in fear of backlash. They will silently keep using this technology, explore what it's good at, what it's bad at. But now they have to do it in secret. And that's not great: Things are better when we can openly talk about things.
 

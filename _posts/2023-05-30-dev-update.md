@@ -1,6 +1,7 @@
 ---
 title: "May - Game Development Update"
 permalink: /blog/23-05-game-dev-update.html
+tags: gaming
 ---
 
 i have become a book nerd.

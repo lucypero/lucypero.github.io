@@ -1,6 +1,7 @@
 ---
 title: "My First 3D Game - Update 1"
 permalink: /blog/3d-game-update-1.html
+tags: game-dev programming c++
 ---
 
 I embarked on the journey of creating a 3D game from scratch in June '23 to put all my 3D rendering knowledge to practical use. My aim was not only to apply what I've learned about 3D rendering but also to gain insights into the entire process of game development.

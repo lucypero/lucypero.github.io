@@ -1,6 +1,7 @@
 ---
 title: "My Gaming Log"
 permalink: /blog/gaming-log.html
+tags: gaming
 ---
 
 This is my log for most of the games I play.
@@ -8,7 +9,6 @@ This is my log for most of the games I play.
 Also, check out my [reviews on Steam](https://steamcommunity.com/id/peropero__/recommended/)
 
 (WIP) I have to fill this with more games. I have them logged somewhere else. It's a matter of moving what's there to here.
-
 
 ### 2023-12-07 - The Legend of Zelda - Echoes of Wisdom
 
@@ -33,9 +33,8 @@ David Hayter is in this game!! I loved that.
 
 ### 2025-01-25 - Buckshot Roulette
 
-(beaten in 30m) 
+(beaten in 30m)
 Small game I enjoyed a lot. Packed with style and it made me strategize a bit. Made in Godot!
-
 
 ### 2025-02-01 - Curse of the Dead Gods
 

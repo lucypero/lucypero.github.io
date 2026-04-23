@@ -1,9 +1,10 @@
 ---
 title: "Programming In Windows and how to make it Great"
 permalink: /blog/windows-development.html
+tags: programming
 ---
 
-*Last Update: 2022-09-25*
+_Last Update: 2022-09-25_
 
 I will show you how to have a great time programming in Windows. Personally, I'd say the experience is much better than on Linux after you learn some of the tricks.
 
@@ -17,7 +18,7 @@ This article will be about showing you all the things I use to make my programme
 
 ### Code Editor: Sublime Text
 
-I have used many, many editors. To name a few: Emacs, Vim, Neovim, Atom, 4coder, VS Code. By far, the editor that has the best *feel* out of all of them is [Sublime Text](https://www.sublimetext.com/). It's the fastest one there is, and it is also extremely powerful. I won't talk much about it here because I'll probably make an article dedicated to it, but it's just amazing after you learn a bit about how to customize it and how to make it work exactly as you want it to. As for package recommendations, there's NeoVintageous for vim bindings, LSP to use LSP Servers, and Origami for Pane management.
+I have used many, many editors. To name a few: Emacs, Vim, Neovim, Atom, 4coder, VS Code. By far, the editor that has the best _feel_ out of all of them is [Sublime Text](https://www.sublimetext.com/). It's the fastest one there is, and it is also extremely powerful. I won't talk much about it here because I'll probably make an article dedicated to it, but it's just amazing after you learn a bit about how to customize it and how to make it work exactly as you want it to. As for package recommendations, there's NeoVintageous for vim bindings, LSP to use LSP Servers, and Origami for Pane management.
 
 ### IDE: CLion
 
@@ -35,7 +36,7 @@ Windows Terminal is actually a pretty good terminal emulator. It has all the fea
 
 ### Shell: Nushell
 
-When it comes to using the terminal, *speed* is my main priority. `cmd`, the default Windows shell, is pretty fast, but unfortunately it is really bad and has no features :joy:. Microsoft's attempt to make a good shell is Powershell. I have used Powershell for a few months. It is very capable and impressive in many regards. Unfortunately, it is *extremely slow*, so I started looking for alternatives. And so I found *Nushell*.
+When it comes to using the terminal, _speed_ is my main priority. `cmd`, the default Windows shell, is pretty fast, but unfortunately it is really bad and has no features :joy:. Microsoft's attempt to make a good shell is Powershell. I have used Powershell for a few months. It is very capable and impressive in many regards. Unfortunately, it is _extremely slow_, so I started looking for alternatives. And so I found _Nushell_.
 
 [Nushell](https://www.nushell.sh/) is a super powerful, multi-platform shell. It is very easy to script for it, too. It has its own scripting language, but it is very easy to get started and it is so much better than shellscript, anyway.
 
@@ -73,4 +74,4 @@ For PC Gaming, there's really nothing else. And for casual use, it's pretty good
 
 I will probably modify and add to this article as time goes on. For now I think this covers most things. Enjoy your time programming in Windows. You will see that it's not that bad after all.
 
-Here are my [configuration files](https://github.com/lucypero/config-files-windows) for Windows and all the programs I use. You might find them useful. 
+Here are my [configuration files](https://github.com/lucypero/config-files-windows) for Windows and all the programs I use. You might find them useful.

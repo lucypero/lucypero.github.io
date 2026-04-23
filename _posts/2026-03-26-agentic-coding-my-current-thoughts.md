@@ -1,6 +1,7 @@
 ---
 title: "Agentic Coding - It's not that simple."
 permalink: /blog/agentic-coding.html
+tags: ai programming
 ---
 
 I've been using Claude Code extensively at work and for little experiments on my own time. I'm here to reflect on my experiences.
@@ -45,4 +46,4 @@ As of now, I feel an aversion to agentic coding. It's much more fun for me to do
 
 # Conclusion
 
-It can be great. But it's just a tool. Use it for what it's good for and not for anything else. Don't let it *think* for you as that will lead to disaster.
+It can be great. But it's just a tool. Use it for what it's good for and not for anything else. Don't let it _think_ for you as that will lead to disaster.

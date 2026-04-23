@@ -1,6 +1,7 @@
 ---
 title: "My First 3D Game - Update 2"
 permalink: /blog/3d-game-update-2.html
+tags: game-dev programming c++
 ---
 
 This is a follow-up to [game update 1](./3d-game-update-1.html)

@@ -1,6 +1,7 @@
 ---
 title: "Game Dev Update - Getting into Godot!"
 permalink: /blog/godot-update.html
+tags: game-dev godot
 ---
 
 I'm going to document a bit about what I've been doing since releasing [Psycho Box](/psycho-box.html).
