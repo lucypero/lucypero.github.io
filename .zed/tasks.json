@@ -3,5 +3,12 @@
     "label": "serve",
     "command": "bundle exec jekyll serve -H 0.0.0.0",
     "use_new_terminal": true
+  },
+  {
+    "label": "new article",
+    "command": "python3 tools/new_article.py",
+    "use_new_terminal": false,
+    "allow_concurrent_runs": true,
+    "reveal": "always"
   }
 ]
