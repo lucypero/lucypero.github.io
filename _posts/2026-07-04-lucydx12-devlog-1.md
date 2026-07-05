@@ -4,7 +4,7 @@ permalink: /blog/lucydx12-devlog-1.html
 tags: programming odin
 ---
 
-(put screenshot here)
+![lucydx12](../assets/lucydx12/lucydx12_wSHvcXNoc5.jpg)
 
 I've been working on Direct3D 12 for over half a year and I thought it was about time to write about what I've learned. Here's some cool stuff I've learned in the process. But before that, an overview:
 
@@ -16,14 +16,10 @@ In the future, This project might turn into a real product, like a 3D renderer o
 
 ## How did I learn all this?
 
-In short: Google, Gemini, and smart and kind people answering my questions in Discord. Plus, a little bit from books.
+In short: Google, Gemini, and smart and kind people answering my questions in Discord. Plus, a little bit from books. I link to articles further into this article.
 
-
-(paste articles and Gemini usage and all that)
-
-- (book) Real Time Rendering for rendering techniques.
-- (book) Game Engine Architecture for multithreading theory.
-
+- (book) [Real Time Rendering](https://www.amazon.com/dp/1138627003?lv=shuf&channelId=500&plpRedirect=mhFallback) for rendering techniques.
+- (book) [Game Engine Architecture](https://www.amazon.com/Engine-Architecture-Third-Jason-Gregory/dp/1138035459?crid=1HY8KOV9OQAH9&dib=eyJ2IjoiMSJ9.C1WfWFj2hVuDjMPJ_9fwoxoDnnoxssV1RZ-lt_weN3iLqetMclO1bkfgZFN39WJu8eyDtal5IDYZ4HeqfvXZcyhim-8KjmQcOxJdnJgT2buaO0qkYv0aiJ2l-gEugiYPv6Hvbwpgamo7w4S5B8af3gOoPlhSHOuTQNciwts-AhQyw6K5oyYHZZcyXGGb_qSPbZtTn9T8Hu--BxbvcgSdu7BJy39LqoqiNorTziF-d8w.ydDsxjq6lffURL1kYEuCCqtwRLrGnLTWJPcBwIQeN0E&dib_tag=se&keywords=Game+Engine+Architecture&qid=1783271361&s=books&sprefix=%2Cstripbooks%2C242&sr=1-2) for multithreading theory.
 
 # Tools used
 
@@ -33,11 +29,11 @@ In short: Google, Gemini, and smart and kind people answering my questions in Di
 - [RenderDoc](https://renderdoc.org/): Essential for debugging the GPU. I love it. Recently I even set up shader debugging. I can debug shader code as if it's CPU code, which is really cool.
 - [Spall](https://github.com/colrdavidson/spall-web): I don't use this anymore as I found it limiting; and development has ceased. In the future, I'll try another profiler, like Tracy.
 - Git + [Sublime Merge](https://www.sublimemerge.com/): As I've said before, Sublime Merge is the best way to interact with Git, and everyone should use it. I've used it for many years, and I forced all the artists at work to use it. And they're happy for it.
-- And of course, I have to use Windows for DX12. But that's OK, as all the best software runs on it (and *only* on it in some instances like RAD), and it's still the [best OS for software development](https://lucypero.com/blog/windows-development.html).
+- And of course, I have to use Windows for DX12. But that's OK, as all the best software runs on it (and _only_ on it in some instances like RAD), and it's still the [best OS for software development](https://lucypero.com/blog/windows-development.html).
 
 # Learning DX12 itself, and coding the project
 
-Coming from DX11, DX12 is big. You have to manually do some things that I took for granted. A lot of it is boring so I won't write much about it. The great thing is: DX12 itself has changed a lot over the years. It is now over 10 years old. It improved a lot over the years, and it got simpler in many ways. A lot of this is thanks to how much the hardware has changed, as well. [This article](https://www.sebastianaaltonen.com/blog/no-graphics-api) talks about this.
+Coming from DX11, DX12 is big. You have to manually do some things that I took for granted. A lot of it is boring so I won't write much about it. The great thing is: DX12 itself has changed a lot over the years. It is now over 10 years old. It improved a lot over the years, and it got simpler in many ways. A lot of this is thanks to how much the hardware has changed, as well. [Sebastian Aaltonen](https://www.sebastianaaltonen.com/blog/no-graphics-api) talks about this.
 
 What's great is that right now, you don't have to do many things that you had to do before in older versions of DX12, and in older graphics API's like DX11 and OpenGL.
 
@@ -65,13 +61,13 @@ Texture :: struct {
 
 I learned pretty early that it's good to create one type of "Uber heap" per each heap type in DX12 and just put every descriptor in one of those as you create them - see `uber_heap_create` [here](https://github.com/lucypero/lucydx12/blob/main/src/dx_helpers.odin#L38C1-L38C17)
 
-One other thing of note is how I'm handling PSO's (Pipeline State Objects). I just have one `pso_create` that defines *everything* about a PSO. [Link to code](https://github.com/lucypero/lucydx12/blob/main/src/dx_helpers.odin#L229). The render proc that I pass as a proc pointer then gets called automatically every frame. The renderer renders all PSO's in an array, in order, automatically:
+One other thing of note is how I'm handling PSO's (Pipeline State Objects). I just have one `pso_create` that defines _everything_ about a [PSO](https://github.com/lucypero/lucydx12/blob/main/src/dx_helpers.odin#L229). The render proc that I pass as a proc pointer then gets called automatically every frame. The renderer renders all PSO's in an array, in order, automatically:
 
 Here, I'm using Odin's [enumerated arrays](https://odin-lang.org/docs/overview/#enumerated-array).
 
 ```odin
 /// This gets stored in a huge Context struct that holds everything
-	psos: [PSOName]PSO,
+psos: [PSOName]PSO,
 ```
 
 ```odin
@@ -89,7 +85,7 @@ PSOName :: enum {
 ```odin
 // in the render loop..
 for pso in ct.psos {
-		pso.render_proc(pso)
+	pso.render_proc(pso)
 }
 ```
 
@@ -97,7 +93,7 @@ for pso in ct.psos {
 
 The renderer uses a standard deferred rendering setup: I first do a geometry pass that renders to 3 Buffers: Albedo, Normal, and AO+Roughness. Then, a lighting pass reads from these buffers to produce a frame. The pipeline keeps going after that, but that's the deferred part.
 
-(put images from renderdoc here)
+![lucydx12](../assets/lucydx12/qrenderdoc_Su2VCUDu8B.png)
 
 # Worker thread for asset loading
 
@@ -105,46 +101,145 @@ Turns out the GPU has a whole separate pipeline just for copying data from CPU t
 
 This video shows a scene transition, as the camera is moving. No stutters. Butter-smooth gameplay.
 
-(show video of scene transition)
+<video controls>
+  <source src="../assets/lucydx12/lucydx12_1ydJcmnS2Q.mp4" type="video/mp4">
+</video>
 
 # Anti Aliasing without MSAA
 
 I'm not doing multiple samples per pixel because I'm on a deferred rendering setup. Therefore, Anti-Aliasing becomes tricky. For now, I set up a compute pass at the end of the pipeline, right before drawing the dear-imgui interface. And in there, I do [FXAA](https://developer.download.nvidia.com/assets/gamedev/files/sdk/11/FXAA_WhitePaper.pdf). The results are OK.
 
-(show comparisons)
+![lucydx12](../assets/lucydx12/firefox_0LsaA8A3MY.png)
 
 There was a hiccup while integrating FXAA. I was passing it the wrong UV coordinates. Instead of passing the center of the pixels, I was passing the corner. This resulted in a blurry image, with no evidence of edge detection.
 
-(show incorrect integration)
-
 Here's the right way to pass UV's to FXAA, in a compute shader:
 
-
 ```c
-	float2 inverse_screen_size = float2(1 / float(width), 1 / float(height));
-	// adding offset to land on the center of the pixel
-	float2 pixel_pos = (float2(dispatchThreadID.xy) + 0.5f) * inverse_screen_size;
+float2 inverse_screen_size = float2(1 / float(width), 1 / float(height));
+// adding offset to land on the center of the pixel
+float2 pixel_pos = (float2(dispatchThreadID.xy) + 0.5f) * inverse_screen_size;
 
-	// later...
+// later...
 
-	FxaaFloat4 fxaa_out = FxaaPixelShader(
-		pixel_pos, // pos
+FxaaFloat4 fxaa_out = FxaaPixelShader(
+	pixel_pos, // pos
 
-	// ...
+// ...
+);
+
 ```
 
 A lot more could be done in regards to AA. It's a big field in computer graphics. I will probably experiment with more techniques in the future.
 
 # Shadow maps
 
-# Using Odin's Real Time Type Information (RTTI) for shader code
+I've implemented basic shadowmapping with PCF filtering. Not much to say here. I did the bare minimum. The shadowmap projection view's parameters are manually picked by me until the frame looked good. Much more work is needed here.
+
+<video controls>
+  <source src="../assets/lucydx12/lucydx12_4ECcmMXWgj.mp4" type="video/mp4">
+</video>
+
+# Using Odin's Runtime Type Information (RTTI) for shader code
+
+I've used Odin's [RTTI](https://pkg.odin-lang.org/core/reflect/) to automate some things related to shaders. Odin packs information about your structs and other things in the executable, which let you automate some things very easily:
+
 ## Input Layouts
+
+```odin
+ct.psos[.Shadowmap] = pso_create("src/shaders/shadowmap.hlsl", PSOParameters {
+	vertex_input = VertexData, // Passing a struct as the vertex input
+	blend_state = .Off,
+	enable_depth = true,
+	depth_write = true,
+	rtv_count = 0,
+}, render_proc = pso_shadowmap_render, pso_name = "Shadowmap pso")
+```
+
+in `pso_create`, I simply pass a struct name, and the code dynamically generates the Input Layout for the PSO out of a struct definition. Defining Input Layouts and keeping them in sync with your structs was one of the most annoying parts of a graphics API, and now it's abstracted away. So, this struct:
+
+```odin
+VertexData :: struct {
+	pos: v3 `POSITION`,
+	normal: v3 `NORMAL`,
+	tangent: v4 `TANGENT`,
+	uv: v2 `TEXCOORD`,
+	uv_2: v2 `TEXCOORD_SECOND_UV`,
+}
+```
+
+Gets auto-converted into this:
+
+```odin
+{
+  INPUT_ELEMENT_DESC{SemanticName = "POSITION", SemanticIndex = 0, Format = "R32G32B32_FLOAT", InputSlot = 0, AlignedByteOffset = 4294967295, InputSlotClass = "PER_VERTEX_DATA", InstanceDataStepRate = 0}
+  INPUT_ELEMENT_DESC{SemanticName = "NORMAL", SemanticIndex = 0, Format = "R32G32B32_FLOAT", InputSlot = 0, AlignedByteOffset = 4294967295, InputSlotClass = "PER_VERTEX_DATA", InstanceDataStepRate = 0}
+  INPUT_ELEMENT_DESC{SemanticName = "TANGENT", SemanticIndex = 0, Format = "R32G32B32A32_FLOAT", InputSlot = 0, AlignedByteOffset = 4294967295, InputSlotClass = "PER_VERTEX_DATA", InstanceDataStepRate = 0}
+  INPUT_ELEMENT_DESC{SemanticName = "TEXCOORD", SemanticIndex = 0, Format = "R32G32_FLOAT", InputSlot = 0, AlignedByteOffset = 4294967295, InputSlotClass = "PER_VERTEX_DATA", InstanceDataStepRate = 0}
+  INPUT_ELEMENT_DESC{SemanticName = "TEXCOORD_SECOND_UV", SemanticIndex = 0, Format = "R32G32_FLOAT", InputSlot = 0, AlignedByteOffset = 4294967295, InputSlotClass = "PER_VERTEX_DATA", InstanceDataStepRate = 0}
+}
+```
+
+... Which is passed to DX12 in a `CreateGraphicsPipelineState()`.
+
 ## Generating HLSL structs out of Odin structs
+
+In a similar way, I use RTTI to generate structs on the HLSL side. Example:
+
+```odin
+
+// This is a list of normal Odin structs.
+
+@(rodata)
+TYPES_FOR_HLSL := [?]typeid{GeneralConstants, DrawConstants, LightType, Light, TextureUV, Material}
+
+// For example, Light:
+
+Light :: struct #align (16) {
+	type: LightType,
+	position: v3,
+
+	radius: f32,
+	direction: v3,
+
+	intensity: f32,
+	color: v3,
+}
+
+// and then we generate like this...
+
+// ...
+
+for type in TYPES_FOR_HLSL {
+	fmt.sbprintfln(&sb, "\n%v", convert_struct_odin_to_hlsl(type, context.temp_allocator))
+}
+
+```
+
+The output for `Light` in HLSL becomes:
+
+```c
+struct Light {
+	LightType type;
+	float3 position;
+	float radius;
+	float3 direction;
+	float intensity;
+	float3 color;
+};
+```
+
+The best thing about generating this code is that it only took me a few hours to learn and set up.
 
 # GLTF processing
 
-(talk about your texture cache here)
+I get all asset data from a `.gltf` file. One interesting thing I did was a texture cache. GLTF doesn't store textures in a GPU optimized format, so what I did is this: when the code reaches the point where it's time to load a texture from the GLTF file, it consults a file cache to see if I already converted the texture. If I didn't, it generates the texture right there, with mipmapping. It does take a while to generate the textures. I use `texconv.exe` for this.
 
-# Other stuff this renderer has
+# Other stuff:
+
+- [dear-imgui](https://github.com/ocornut/imgui) integration: I love this library! Using it, coupled with Odin's RTTI, I can tweak whatever I want in the program visually so, so quickly.
+  - Used [Odin Imgui](https://gitlab.com/L-4/odin-imgui) for dear-imgui bindings for Odin.
 
 # What to work on next
+
+This renderer is only getting started. It still doesn't even have a proper lighting model. Lots of work is still to be done. And I'm still not sure what to make of this project. But as long as I'm learning cool things and I have fun, I will continue. I hope you got something out of this article.
