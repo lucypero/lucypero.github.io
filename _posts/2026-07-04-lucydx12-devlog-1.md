@@ -8,6 +8,8 @@ tags: programming odin
 
 I've been working on Direct3D 12 for over half a year and I thought it was about time to write about what I've learned. Here's some cool stuff I've learned in the process. But before that, an overview:
 
+[Link to the project's source](https://github.com/lucypero/lucydx12)
+
 # What is this project about?
 
 It just started as me trying to learn Direct3D 12 (DX12 for short). The goal is not defined well yet. For now, I'm just doing stuff I find interesting in the 3D rendering realm, and things that seem to be essential for a 3D renderer and/or game engine. Also, I'll do stuff that results in pretty frames, of course.
@@ -59,7 +61,7 @@ Texture :: struct {
 }
 ```
 
-I learned pretty early that it's good to create one type of "Uber heap" per each heap type in DX12 and just put every descriptor in one of those as you create them - see `uber_heap_create` [here](https://github.com/lucypero/lucydx12/blob/main/src/dx_helpers.odin#L38C1-L38C17)
+I learned pretty early that it's good to create one "Uber heap" per each heap type in DX12 and just put every descriptor in one of those as you create them - see `uber_heap_create` [here](https://github.com/lucypero/lucydx12/blob/main/src/dx_helpers.odin#L38C1-L38C17)
 
 One other thing of note is how I'm handling PSO's (Pipeline State Objects). I just have one `pso_create` that defines _everything_ about a [PSO](https://github.com/lucypero/lucydx12/blob/main/src/dx_helpers.odin#L229). The render proc that I pass as a proc pointer then gets called automatically every frame. The renderer renders all PSO's in an array, in order, automatically:
 
@@ -168,7 +170,7 @@ VertexData :: struct {
 }
 ```
 
-Gets auto-converted into this:
+... gets auto-converted into this:
 
 ```odin
 {
@@ -180,7 +182,7 @@ Gets auto-converted into this:
 }
 ```
 
-... Which is passed to DX12 in a `CreateGraphicsPipelineState()`.
+... Which is passed to DX12 in a call to `CreateGraphicsPipelineState()`.
 
 ## Generating HLSL structs out of Odin structs
 
