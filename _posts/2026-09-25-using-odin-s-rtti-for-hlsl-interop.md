@@ -1,7 +1,7 @@
 ---
 title: "Using Odin's RTTI for Shader Interop"
 permalink: /blog/odin-hlsl-interop.html
-tags:
+tags: programming odin
 ---
 
 Odin's [RTTI](https://pkg.odin-lang.org/core/reflect/) (Runtime Type Information) features can be very useful if you're working with graphics API's. I made a quick little proc that checks if a given struct would match in layout with a Constant Buffer in HLSL:
