@@ -200,6 +200,17 @@ exclude:
   - /screenshots
   - /test
   - /vendor
+  - /tools
+  - /docker
+  - Dockerfile.dev
+  # only css/ and webfonts/ are used; the rest is ~5.7k files copied every build
+  - /fontawesome-free-7.2.0-web/svgs
+  - /fontawesome-free-7.2.0-web/svgs-full
+  - /fontawesome-free-7.2.0-web/sprites
+  - /fontawesome-free-7.2.0-web/sprites-full
+  - /fontawesome-free-7.2.0-web/js
+  - /fontawesome-free-7.2.0-web/scss
+  - /fontawesome-free-7.2.0-web/metadata
 
 defaults:
   - scope:
