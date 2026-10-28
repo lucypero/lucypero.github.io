@@ -1,7 +1,7 @@
 [
   {
     "label": "serve",
-    "command": "bundle exec jekyll serve -H 0.0.0.0",
+    "command": "bundle exec jekyll serve -H 0.0.0.0 --limit_posts 3",
     "use_new_terminal": true
   },
   {

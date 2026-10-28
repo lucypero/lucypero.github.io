@@ -4,37 +4,17 @@ permalink: /blog/gaming-log.html
 tags: gaming
 ---
 
-This is my log for most of the games I play.
+This is my log for some of the games I play.
 
 Also, check out my [reviews on Steam](https://steamcommunity.com/id/peropero__/recommended/)
 
-(WIP) I have to fill this with more games. I have them logged somewhere else. It's a matter of moving what's there to here.
+### 2026-09-05 - Return of the Obra Dinn
 
-### 2023-12-07 - The Legend of Zelda - Echoes of Wisdom
+I dropped this game twice. It's very hard to get into. I think the game doesn't give you enough reasons to care about the game as you're discovering the bodies at the beginning. But after a few hour, it clicks. When you nail two or three sets of deductions, it's hard to stop. And you get into the story. It's a very unique game. Very well produced, especially with the audio design. I loved it. It made me wanna play more "brainy" games like this.
 
-(beaten in 20hs)
+### 2026-08-05 - Isles of Sea And Sky
 
-I loved the new mechanics in this Zelda game. It's a very adorable and comfy game to play with a lot of puzzles, and with a new twist to the gameplay. Only downsides are: It's too long, it gets too easy, and it doesn't go deep enough with its own mechanics, after a certain point in the game.
-
-### 2024-12-23 - Inscryption
-
-(beaten in 15hs)
-
-An outstanding game. I am speechless. It rises above other indie games. It's very immersive and it manages to mix multiple game genres, all tied to an exciting plot. It may be my personal 2024 GOTY.
-
-### 2025-01-07 - Bloodstained
-
-(beaten in 17.1hs)
-
-It's basically Castlevania - Symphony of the Night, but more modern. Lots of weapons to use. I enjoyed it a lot, but it was too long for me, for what it is. I had to force myself to beat it.
-I got lost at times and I didn't enjoy that. I resorted to look up online where to go. But that's on me, I'm not a big fan of exploration.
-It's goofy and sometimes rough around the edges, but it has its charm. It has the "indie feel". Some bosses felt unfair. There are some difficulty spikes that are tough to cross, but that's OK.
-David Hayter is in this game!! I loved that.
-
-### 2025-01-25 - Buckshot Roulette
-
-(beaten in 30m)
-Small game I enjoyed a lot. Packed with style and it made me strategize a bit. Made in Godot!
+Very cute puzzle adventure game. I enjoyed my time solving the puzzles. I played this right after finishing the demo for The Order of the Sinking Star. Some of the music tracks are very catchy, too.
 
 ### 2025-02-01 - Curse of the Dead Gods
 
@@ -45,3 +25,29 @@ Very addictive roguelike with solid combat. The visual style is something that a
 Context: I could not get into Hades and I tried a lot. I prefer this one much more.
 
 I just beat the game (well, the standard exploration tree). It's been very challenging but very rewarding. This game tested my limits but in a good way. It took a lot of perseverance, patience, and focus. And it felt great at the end. Try this game out if you like a good challenge.
+
+### 2025-01-25 - Buckshot Roulette
+
+(beaten in 30m)
+Small game I enjoyed a lot. Packed with style and it made me strategize a bit. Made in Godot!
+
+### 2025-01-07 - Bloodstained
+
+(beaten in 17.1hs)
+
+It's basically Castlevania - Symphony of the Night, but more modern. Lots of weapons to use. I enjoyed it a lot, but it was too long for me, for what it is. I had to force myself to beat it.
+I got lost at times and I didn't enjoy that. I resorted to look up online where to go. But that's on me, I'm not a big fan of exploration.
+It's goofy and sometimes rough around the edges, but it has its charm. It has the "indie feel". Some bosses felt unfair. There are some difficulty spikes that are tough to cross, but that's OK.
+David Hayter is in this game!! I loved that.
+
+### 2024-12-23 - Inscryption
+
+(beaten in 15hs)
+
+An outstanding game. I am speechless. It rises above other indie games. It's very immersive and it manages to mix multiple game genres, all tied to an exciting plot. It may be my personal 2024 GOTY.
+
+### 2023-12-07 - The Legend of Zelda - Echoes of Wisdom
+
+(beaten in 20hs)
+
+I loved the new mechanics in this Zelda game. It's a very adorable and comfy game to play with a lot of puzzles, and with a new twist to the gameplay. Only downsides are: It's too long, it gets too easy, and it doesn't go deep enough with its own mechanics, after a certain point in the game.
