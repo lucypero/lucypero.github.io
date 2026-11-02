@@ -18,6 +18,8 @@ show_title: false
           <div class="showcase-card__image">
             <img src="{{ _project.cover | relative_url }}" alt="{{ _project.title }}" loading="lazy">
           </div>
+        {%- else -%}
+          <div class="showcase-card__image showcase-card__image--empty"></div>
         {%- endif -%}
         <div class="showcase-card__body">
           <h2 class="showcase-card__title">{{ _project.title }}</h2>

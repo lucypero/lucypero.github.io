@@ -52,6 +52,11 @@
     }
   }
 
+  // stand-in for entries without a cover, so rows stay aligned
+  .showcase-card__image--empty {
+    background-color: var(--decorate-color);
+  }
+
   // colors set here rather than on the card so the theme's link hover color doesn't leak in
   .showcase-card__body {
     padding: map-get($spacers, 3) map-get($spacers, 4) map-get($spacers, 4);

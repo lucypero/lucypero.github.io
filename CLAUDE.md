@@ -5,6 +5,7 @@ Personal site (Jekyll, based on the jekyll-TeXt theme). Skin: `_sass/skins/_dark
 ## Dev server
 
 - The user already runs `jekyll serve`. Do not start, stop or restart it.
+- The Zed task "serve (fast, 3 newest posts only)" uses `--limit_posts 3`; if an older post 404s locally, that's why (check the scratch build instead).
 - Changes to `_config.yml` are not picked up by a running `jekyll serve`; ask the user to restart it when you change that file.
 - To check for build errors without touching the running server or `_site`, build into the scratchpad with the disk cache off:
   `bundle exec jekyll build -d <scratchpad>/site --disable-disk-cache --quiet`

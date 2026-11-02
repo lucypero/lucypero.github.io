@@ -22,13 +22,11 @@
         {%- include author-links.html author=_site_author -%}
       </div>
     </div>
-    {%- include snippets/get-locale-string.html key='COPYRIGHT_DATES' -%}
-    {%- assign _locale_copyright_dates = __return -%}
     <div class="site-info mt-2">
       <div>
-        {%- include snippets/get-locale-string.html key='COPYRIGHT_DATES' -%}
-        {%- assign _locale_copyright_dates = __return -%}
-        © {{ site.title }} {{ _locale_copyright_dates }},
+        {%- comment -%} build year as fallback; the script keeps it current between deploys {%- endcomment -%}
+        © {{ site.title }} <span class="js-copyright-year">{{ site.time | date: '%Y' }}</span>,
+        <script>document.querySelector('.js-copyright-year').textContent = new Date().getFullYear();</script>
         Powered by <a title="Jekyll is a simple, blog-aware, static site generator." href="http://jekyllrb.com/">Jekyll</a> & <a
         title="TeXt is a super customizable Jekyll theme." href="https://github.com/kitian616/jekyll-TeXt-theme">TeXt Theme</a>.
       </div>

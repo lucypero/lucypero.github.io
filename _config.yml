@@ -191,6 +191,8 @@ exclude:
   - LICENSE
   - README-*.md
   - README.md
+  - TODO.md
+  - CLAUDE.md
   - gulpfile.js
   - jekyll-text-theme.gemspec
   - package-lock.json
