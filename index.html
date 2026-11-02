@@ -1,5 +1,41 @@
 ---
-layout: home
-# articles:
-#   excerpt_type: html
+layout: page
+title: Showcase
+key: showcase
+show_title: false
 ---
+<div class="layout--showcase">
+
+  <section class="showcase-intro">
+    <!-- placeholder intro, replace with your own words -->
+    <div class="article__header"><header><h1>Hi, I'm Lucy</h1></header></div>
+    <p>I'm a game programmer specializing in game engines and graphics. I like building things from the ground up: renderers, emulators, tools, and the games that run on top of them.</p>
+    <p>Below are some of the personal projects I've worked on. Click on any of them to read more about how they were made.</p>
+  </section>
+
+  <div class="showcase-grid">
+    {%- for _project in site.showcase_posts -%}
+      <a class="showcase-card" href="{{ _project.url | relative_url }}">
+        {%- if _project.cover -%}
+          <div class="showcase-card__image">
+            <img src="{{ _project.cover | relative_url }}" alt="{{ _project.title }}" loading="lazy">
+          </div>
+        {%- endif -%}
+        <div class="showcase-card__body">
+          <h2 class="showcase-card__title">{{ _project.title }}</h2>
+          {%- if _project.subtitle -%}
+            <p class="showcase-card__subtitle">{{ _project.subtitle }}</p>
+          {%- endif -%}
+          {%- if _project.highlights -%}
+            <ul class="showcase-card__highlights">
+              {%- for _highlight in _project.highlights -%}
+                <li>{{ _highlight }}</li>
+              {%- endfor -%}
+            </ul>
+          {%- endif -%}
+        </div>
+      </a>
+    {%- endfor -%}
+  </div>
+
+</div>

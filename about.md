@@ -13,6 +13,6 @@ I like systems programming and game development. For the past few years, all my 
 
 I'm also deeply into games: both as a player, and as a game designer. I like thinking and talking about games. I write [articles](/archive.html?tag=gaming) about videogames and game design. Here's my [gaming log](/blog/gaming-log.html) where I write small reviews about some of the games I played. 
 
-On this website, you'll find articles about (mostly) programming and videogames. There's also a [showcase](/showcase.html) section where I talk about some of my personal projects.
+On this website, you'll find articles about (mostly) programming and videogames. There's also a [showcase](/) section where I talk about some of my personal projects.
 
 Check out my [GitHub profile](https://github.com/lucypero/)
