@@ -154,6 +154,12 @@ video {
   width:100%;
 }
 
+// site name in a typewriter font (the save room typewriter)
+.header__brand a {
+  font-family: 'Special Elite', 'Courier New', monospace;
+  letter-spacing: .02em;
+}
+
 // shown when overscrolling (touchpad/touch bounce); match the header/footer so it isn't white
 html {
   background-color: var(--header-background);

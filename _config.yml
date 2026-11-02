@@ -20,9 +20,9 @@ text_skin: darklucy # "default" (default), "dark", "forest", "ocean", "chocolate
 highlight_theme: tomorrow-night # "default" (default), "tomorrow", "tomorrow-night", "tomorrow-night-eighties", "tomorrow-night-blue", "tomorrow-night-bright"
 url     : # the base hostname & protocol for your site e.g. https://www.someone.com
 baseurl : # does not include hostname
-title   : Lucy's Blog
+title   : Lucy's Save Room
 description: > # this means to ignore newlines until "Language & timezone"
-  Lucy's Blog where I talk about programming and I show off my projects. I might also talk about other stuff.
+  Game engines, graphics programming and games.
 
 
 ## => Language and Timezone
