@@ -72,8 +72,8 @@
 // dark colors: follow the OS unless the visitor picked a theme with the header toggle (html[data-theme])
 @mixin darklucy-dark-colors {
 
-    // accent: same pink family as the light theme (~8:1 on the background)
-    --main-color-1: #ff8fb1;
+    // accent: soft pastel pink (~11:1 on the background)
+    --main-color-1: #f5b8cb;
     --text-color-1: #1a1618;
 
     --main-color-2: #ff006a;
@@ -119,7 +119,7 @@
     --border-color-l: var(--border-color);
     --decorate-color: rgba(255, 220, 235, .08);
     --mask-color: rgba(0, 0, 0, .9);
-    --select-color: rgba(255, 143, 177, 0.45);
+    --select-color: rgba(245, 184, 203, 0.4);
 
     // highlight
     --highlight-background   : #1d1f21;
@@ -131,7 +131,7 @@
     --highlight-green        : #b5bd68;
     --highlight-aqua         : #ffe7ad;
     --highlight-blue         : #ffe7ad;
-    --highlight-purple       : #ff8fb1;
+    --highlight-purple       : #f5b8cb;
 }
 
 @media (prefers-color-scheme: dark) {
