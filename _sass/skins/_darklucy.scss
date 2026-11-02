@@ -153,3 +153,8 @@ $npm-color: #fff;
 video {
   width:100%;
 }
+
+// shown when overscrolling (touchpad/touch bounce); match the header/footer so it isn't white
+html {
+  background-color: var(--header-background);
+}
