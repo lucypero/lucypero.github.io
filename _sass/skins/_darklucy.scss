@@ -17,6 +17,7 @@
   --main-color-3: #FFA6AF;
   --text-color-3: #3b1f28;
   --header-link-color: #8a1240;
+  --header-logo-color: #2e1a21;
 
   --main-color-theme-light: rgba(0, 0, 0, .8);
   --main-color-theme-dark: rgba(255, 255, 255, .8);
@@ -71,37 +72,40 @@
 // dark colors: follow the OS unless the visitor picked a theme with the header toggle (html[data-theme])
 @mixin darklucy-dark-colors {
 
-    --main-color-1: #f7bfff;
-    --text-color-1: rgba(255, 255, 255, 0.8);
+    // accent: same pink family as the light theme (~8:1 on the background)
+    --main-color-1: #ff8fb1;
+    --text-color-1: #1a1618;
 
     --main-color-2: #ff006a;
     --text-color-2: rgba(255, 255, 255, .8);
 
-    // header-footer colors
-    --main-color-3: #222;
-    --text-color-3: rgba(255, 255, 255, .8);
+    // header-footer colors: a lifted plum-grey so the header separates from the page
+    --main-color-3: #2a2126;
+    --text-color-3: #e6dde1;
     --header-link-color: var(--main-color-1);
+    --header-logo-color: var(--main-color-1);
 
     --main-color-theme-light: rgba(0, 0, 0, .8);
     --main-color-theme-dark: rgba(255, 255, 255, .8);
 
-    // page background
-    --background-color: #1c1c1c;
+    // page background: near-black with a slight plum tint
+    --background-color: #1a1618;
 
     // text colors
     --text-color-theme-light-d: #000;
     --text-color-theme-light: #222;
     --text-color-theme-light-l: #888;
 
-    --text-color-theme-dark-d: rgba(255, 255, 255, .8);
-    --text-color-theme-dark: rgba(255, 255, 255, .7);
-    --text-color-theme-dark-l: rgba(255, 255, 255, .5);
+    // solid warm greys: headings ~15:1, body ~11:1, muted ~6:1
+    --text-color-theme-dark-d: #f2eaee;
+    --text-color-theme-dark: #d6ccd0;
+    --text-color-theme-dark-l: #a2969b;
 
     --text-color-d: var(--text-color-theme-dark-d);
     --text-color: var(--text-color-theme-dark);
     --text-color-l: var(--text-color-theme-dark-l);
 
-    --text-background-color: rgba(255, 255, 255, .05);
+    --text-background-color: rgba(255, 235, 245, .05);
 
     // header and footer colors
     --header-text-color: var(--text-color-3);
@@ -111,11 +115,11 @@
     --footer-background: var(--main-color-3);
 
     // border and shadow colors
-    --border-color: rgba(255, 255, 255, 0.38);
+    --border-color: rgba(255, 220, 235, 0.22);
     --border-color-l: var(--border-color);
-    --decorate-color: rgba(255, 255, 255, .1);
+    --decorate-color: rgba(255, 220, 235, .08);
     --mask-color: rgba(0, 0, 0, .9);
-    --select-color: rgba(247, 191, 255, 0.8);
+    --select-color: rgba(255, 143, 177, 0.45);
 
     // highlight
     --highlight-background   : #1d1f21;
@@ -127,7 +131,7 @@
     --highlight-green        : #b5bd68;
     --highlight-aqua         : #ffe7ad;
     --highlight-blue         : #ffe7ad;
-    --highlight-purple       : #f7bfff;
+    --highlight-purple       : #ff8fb1;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -189,6 +193,12 @@ video {
 
 :root[data-theme="dark"] {
   @include darklucy-dark-toggle-icon;
+}
+
+// heart logo: its paths have no fill of their own (default black, invisible on the dark header)
+.header__brand > svg .st0 {
+  fill: var(--header-logo-color);
+  stroke: var(--header-logo-color);
 }
 
 // site name in a typewriter font (the save room typewriter)
