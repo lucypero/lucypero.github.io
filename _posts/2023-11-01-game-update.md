@@ -36,7 +36,7 @@ I also added camera sway, or a "drunk camera" effect to add to the trippy feel o
 
 ## Music and sound effects
 
-My boyfriend was kind enough to work on the music and sound for this game. The results were amazing. I think people will really like it. I won't post the music here; you'll have to wait for the game for that.
+My partner was kind enough to work on the music and sound for this game. The results were amazing. I think people will really like it. I won't post the music here; you'll have to wait for the game for that.
 
 I took an interest in sound and music in games since this experience. They are so, so important for a game, so I have to know the basics, at the very least.
 

@@ -24,7 +24,7 @@ It turned out to be a great idea, because I managed to finish the project, and i
 
 <iframe frameborder="0" src="https://itch.io/embed/2539667?linkback=true&amp;dark=true" width="552" height="167"><a href="https://lucypero.itch.io/pew-pew-baba">Pew Pew Baba by Lucy</a></iframe>
 
-While making this tiny game, I learned a lot about basic things in Godot. So it was a great experience. I also learned a bit about how to make SFX, and a bit about music. My boyfriend taught me about sound, and he's the one who made the amazing
+While making this tiny game, I learned a lot about basic things in Godot. So it was a great experience. I also learned a bit about how to make SFX, and a bit about music. My partner taught me about sound, and made the amazing
 music track in the game! 🙂
 
 ### After Pew Pew Baba - C#
