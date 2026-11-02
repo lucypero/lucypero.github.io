@@ -2,20 +2,27 @@
 
 Site stays semi-anonymous: no LinkedIn, no past employers/jobs. Recruiters arrive here from the CV/LinkedIn.
 
-## Showcase
-- [ ] Trim card subtitles/highlights (Lucy)
-- [x] Add lucydx12 entry
-- [x] Add lucyray, Voidcrawl, lucyfmt entries
-- [x] Reorder cards: engine/graphics first, Pew Pew Baba last
-- [x] lucyfmt cover image
-- [ ] Fill in `TODO:` lines in `_showcase_posts/` (lucydx12, lucyray, Voidcrawl, lucyfmt)
-- [x] Quick-facts block on each project page
-- [ ] Fill in `[TODO]` facts: Psycho Box art credit, Voidcrawl role, Pew Pew Baba dates
+## Lucy
+- [ ] Trim card subtitles/highlights
 - [ ] Check guessed timelines (from git history / blog posts)
-- [x] Link related blog posts from each project page
+- [ ] Fill in `[TODO]` facts:
+  - [ ] Psycho Box: art credit
+  - [ ] Voidcrawl: your role
+  - [ ] Pew Pew Baba: release month, timeline
+- [ ] Fill in `TODO:` lines in project pages:
+  - [ ] lucydx12: what's next
+  - [ ] lucyray: render times / threading speedup, what's next
+  - [ ] Voidcrawl: what the game is, who did what
+  - [ ] lucyfmt: how it works, editor integration
+- [ ] About: other languages to list (HLSL, Python...?)
+- [ ] Delete unused `assets/images/lucynes/megaman6.png` (optional)
 
-## Site
-- [ ] Rename site ("Lucy's Blog")
+## Claude
+- [ ] Email + GitHub links on the showcase page
+
+## Release
+- [ ] Review the `refactor` branch locally (facts panel, cards on phone width)
+- [ ] Merge `refactor` into `master` to deploy
 
 ## Later
 - [ ] Showcase entry for the new game (once shareable)

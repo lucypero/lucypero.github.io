@@ -16,6 +16,9 @@ Personal site (Jekyll, based on the jekyll-TeXt theme). Skin: `_sass/skins/_dark
 - To check for build errors without touching the running server or `_site`, build into the scratchpad with the disk cache off:
   `bundle exec jekyll build -d <scratchpad>/site --disable-disk-cache --quiet`
   The Sass "slash-div" deprecation warnings are pre-existing and harmless.
+- To see a page without touching the user's desktop: serve that scratch build on a temporary port
+  (`python -m http.server 4789 --bind 127.0.0.1 --directory <scratchpad>/site`, stop it afterwards) and take a headless Edge screenshot
+  (`msedge.exe --headless=new --disable-gpu --hide-scrollbars --virtual-time-budget=8000 --screenshot=<png> --window-size=1100,420 <url>`).
 
 ## Site structure
 
