@@ -65,8 +65,8 @@
   --highlight-purple       : #ff6f90;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
+// dark colors: follow the OS unless the visitor picked a theme with the header toggle (html[data-theme])
+@mixin darklucy-dark-colors {
 
     --main-color-1: #f7bfff;
     --text-color-1: rgba(255, 255, 255, 0.8);
@@ -125,7 +125,16 @@
     --highlight-aqua         : #ffe7ad;
     --highlight-blue         : #ffe7ad;
     --highlight-purple       : #f7bfff;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    @include darklucy-dark-colors;
   }
+}
+
+:root[data-theme="dark"] {
+  @include darklucy-dark-colors;
 }
 
 // function colors
@@ -152,6 +161,31 @@ $npm-color: #fff;
 
 video {
   width:100%;
+}
+
+// theme toggle icon: moon while light (switch to dark), sun while dark.
+// selectors include .theme-toggle to beat Font Awesome's own display rule
+.theme-toggle .theme-toggle__to-light {
+  display: none;
+}
+
+@mixin darklucy-dark-toggle-icon {
+  .theme-toggle .theme-toggle__to-dark {
+    display: none;
+  }
+  .theme-toggle .theme-toggle__to-light {
+    display: inline-block;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    @include darklucy-dark-toggle-icon;
+  }
+}
+
+:root[data-theme="dark"] {
+  @include darklucy-dark-toggle-icon;
 }
 
 // site name in a typewriter font (the save room typewriter)

@@ -19,6 +19,11 @@ Personal site (Jekyll, based on the jekyll-TeXt theme). Skin: `_sass/skins/_dark
 - To see a page without touching the user's desktop: serve that scratch build on a temporary port
   (`python -m http.server 4789 --bind 127.0.0.1 --directory <scratchpad>/site`, stop it afterwards) and take a headless Edge screenshot
   (`msedge.exe --headless=new --disable-gpu --hide-scrollbars --virtual-time-budget=8000 --screenshot=<png> --window-size=1100,420 <url>`).
+  - Headless Edge has a minimum window width and crops narrow shots; for phone width, screenshot a page with `<iframe src="/" width="380">`.
+  - This PC's OS is in dark mode; add `--blink-settings=preferredColorScheme=1` to render light.
+- Light/dark: follows the OS by default; the header toggle sets `html[data-theme]` and saves it in localStorage (`_includes/head/custom.html`).
+  Dark colors live in the `darklucy-dark-colors` mixin in `_sass/skins/_darklucy.scss`; any new dark-only CSS must apply under both
+  `@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) … }` and `:root[data-theme="dark"] …`.
 
 ## Site structure
 

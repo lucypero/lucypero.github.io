@@ -51,7 +51,8 @@
       height: map-get($layout, header-height-sm);
     }
   }
-  & > .search-button {
+  & > .search-button,
+  & > .theme-toggle {
     display: none;
     margin-left: map-get($spacers, 2);
     @include media-breakpoint-down(md) {
@@ -103,7 +104,8 @@
     @include media-breakpoint-down(md) {
       height: auto;
     }
-    .search-button {
+    .search-button,
+    .theme-toggle {
       @include media-breakpoint-down(md) {
         display: none;
       }
