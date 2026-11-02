@@ -22,3 +22,17 @@ Site stays semi-anonymous: no LinkedIn, no past employers/jobs. Recruiters arriv
 
 ## Later
 - [ ] Showcase entry for the new game (once shareable)
+
+## Showcase projects
+
+- [x] lucydx12
+- [x] lucynes
+- [x] psycho box
+- [x] lucyray
+- [x] voidcrawl
+- [x] lucyfmt
+- [x] pp bb
+
+- [x] lucydx12's README.
+
+- [ ] review whole showcase page.
