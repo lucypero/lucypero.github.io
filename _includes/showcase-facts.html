@@ -1,0 +1,42 @@
+{%- assign _facts = include.facts -%}
+{%- if _facts -%}
+<aside class="project-facts">
+  <dl>
+    {%- if _facts.status -%}
+      <div class="project-facts__row"><dt>Status</dt><dd>{{ _facts.status }}</dd></div>
+    {%- endif -%}
+    {%- if _facts.timeline -%}
+      <div class="project-facts__row"><dt>Timeline</dt><dd>{{ _facts.timeline }}</dd></div>
+    {%- endif -%}
+    {%- if _facts.role -%}
+      <div class="project-facts__row"><dt>Role</dt><dd>{{ _facts.role }}</dd></div>
+    {%- endif -%}
+    {%- if _facts.tech -%}
+      <div class="project-facts__row"><dt>Tech</dt><dd>{{ _facts.tech | join: ' · ' }}</dd></div>
+    {%- endif -%}
+    {%- if _facts.links -%}
+      <div class="project-facts__row">
+        <dt>Links</dt>
+        <dd class="project-facts__links">
+          {%- for _link in _facts.links -%}
+            <a href="{{ _link.url }}">{{ _link.label }}</a>
+          {%- endfor -%}
+        </dd>
+      </div>
+    {%- endif -%}
+    {%- if _facts.articles -%}
+      <div class="project-facts__row">
+        <dt>Articles</dt>
+        <dd>
+          <ul>
+            {%- for _article in _facts.articles -%}
+              {%- assign _post = site.posts | where: 'url', _article | first -%}
+              <li><a href="{{ _article | relative_url }}">{%- if _post -%}{{ _post.title }}{%- else -%}{{ _article }}{%- endif -%}</a></li>
+            {%- endfor -%}
+          </ul>
+        </dd>
+      </div>
+    {%- endif -%}
+  </dl>
+</aside>
+{%- endif -%}

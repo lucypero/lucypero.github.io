@@ -2,6 +2,12 @@
 
 Personal site (Jekyll, based on the jekyll-TeXt theme). Skin: `_sass/skins/_darklucy.scss`.
 
+## Content rules
+
+- The site stays semi-anonymous: no LinkedIn, no past employers or job history. Recruiters reach it from the CV/LinkedIn, not the other way round.
+- Writing on the site should be brief and to the point.
+- `TODO.md` at the repo root tracks open site work; keep it updated.
+
 ## Dev server
 
 - The user already runs `jekyll serve`. Do not start, stop or restart it.
@@ -15,6 +21,8 @@ Personal site (Jekyll, based on the jekyll-TeXt theme). Skin: `_sass/skins/_dark
 
 - `/` (`index.html`) is the showcase: intro text plus one card per entry in `_showcase_posts`.
   Cards read `cover`, `title`, `subtitle` and `highlights` (a list) from each entry's front matter. Styles: `_sass/layout/_showcase.scss`.
+- Showcase project pages use `layout: showcase`, which renders a quick-facts panel (`_includes/showcase-facts.html`) from front matter:
+  `facts: { status, timeline, role, tech: [..], links: [{label, url}], articles: [post permalinks] }`. Article titles are looked up from the posts.
 - `/blog/` (`blog/index.html`) is the paginated blog feed (`paginate_path: /blog/page:num`, `paths.home: /blog/`).
 - `/showcase.html` is only a redirect to `/` so old links keep working.
 - Nav menu: `_data/navigation.yml`.

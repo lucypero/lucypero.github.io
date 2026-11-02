@@ -1,3 +1,63 @@
+// quick-facts panel at the top of each showcase project page (_includes/showcase-facts.html)
+.project-facts {
+  margin: 0 0 map-get($spacers, 5);
+  padding: map-get($spacers, 3) map-get($spacers, 4);
+  background-color: var(--text-background-color);
+  border: 1px solid var(--border-color);
+  border-left: 3px solid var(--main-color-1);
+  border-radius: map-get($base, border-radius);
+
+  dl {
+    margin: 0;
+  }
+
+  .project-facts__row {
+    display: grid;
+    grid-template-columns: 6.5rem minmax(0, 1fr);
+    gap: map-get($spacers, 3);
+    padding: map-get($spacers, 2) 0;
+
+    & + .project-facts__row {
+      border-top: 1px solid var(--decorate-color);
+    }
+
+    @include media-breakpoint-down(md) {
+      grid-template-columns: minmax(0, 1fr);
+      gap: map-get($spacers, 1);
+    }
+  }
+
+  dt {
+    padding-top: .15rem;
+    font-size: map-get($base, font-size-xs);
+    font-weight: map-get($base, font-weight-bold);
+    letter-spacing: .08em;
+    text-transform: uppercase;
+    color: var(--text-color-l);
+  }
+
+  dd {
+    margin: 0;
+    color: var(--text-color-d);
+  }
+
+  ul {
+    margin: 0;
+    padding: 0;
+
+    li {
+      margin: 0;
+      list-style: none;
+    }
+  }
+
+  .project-facts__links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: map-get($spacers, 1) map-get($spacers, 3);
+  }
+}
+
 .layout--showcase {
   .showcase-intro {
     margin-bottom: map-get($spacers, 5);
