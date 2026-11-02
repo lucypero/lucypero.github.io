@@ -10,6 +10,12 @@
   h1 {
     word-wrap: break-word;
   }
+  // front matter `subtitle` (showcase pages), shown under the title
+  .article__subtitle {
+    margin: map-get($spacers, 2) 0 0;
+    font-size: map-get($base, font-size-h5-lg);
+    color: var(--text-color-l);
+  }
   .split-space {
     @include user-select(none);
   }
