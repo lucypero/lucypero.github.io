@@ -26,11 +26,25 @@ type: article
 <script>
   {%- include scripts/article.js -%}
 </script>
-<script src="https://utteranc.es/client.js"
-        repo="lucypero/lucypero.github.io"
-        issue-term="title"
-        label="comment"
-        theme="preferred-color-scheme"
-        crossorigin="anonymous"
-        async>
+<script>
+  // utterances comments, themed to match the site (not just the OS) and updated when the theme toggle is used
+  (function () {
+    var utterancesTheme = function (theme) { return theme === 'dark' ? 'github-dark' : 'github-light'; };
+
+    var script = document.createElement('script');
+    script.src = 'https://utteranc.es/client.js';
+    script.setAttribute('repo', 'lucypero/lucypero.github.io');
+    script.setAttribute('issue-term', 'title');
+    script.setAttribute('label', 'comment');
+    script.setAttribute('theme', utterancesTheme(window.siteTheme()));
+    script.setAttribute('crossorigin', 'anonymous');
+    script.async = true;
+    document.currentScript.after(script);
+
+    document.addEventListener('site-theme-change', function (event) {
+      var frame = document.querySelector('.utterances-frame');
+      if (!frame) return;
+      frame.contentWindow.postMessage({ type: 'set-theme', theme: utterancesTheme(event.detail) }, 'https://utteranc.es');
+    });
+  })();
 </script>

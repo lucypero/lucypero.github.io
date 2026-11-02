@@ -4,6 +4,13 @@
 <script>
   (function () {
     var root = document.documentElement;
+    var osTheme = function () {
+      return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+    };
+    // the theme actually shown; embeds (utterances) use this to match the site
+    window.siteTheme = function () {
+      return root.getAttribute('data-theme') || osTheme();
+    };
     try {
       var saved = localStorage.getItem('theme');
       if (saved === 'light' || saved === 'dark') root.setAttribute('data-theme', saved);
@@ -11,12 +18,10 @@
 
     document.addEventListener('click', function (event) {
       if (!event.target.closest('.js-theme-toggle')) return;
-      var osTheme = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
-      var current = root.getAttribute('data-theme') || osTheme;
-      var next = current === 'dark' ? 'light' : 'dark';
+      var next = window.siteTheme() === 'dark' ? 'light' : 'dark';
       // picking the OS theme again drops the override, so the site follows the OS from then on
       try {
-        if (next === osTheme) {
+        if (next === osTheme()) {
           root.removeAttribute('data-theme');
           localStorage.removeItem('theme');
         } else {
@@ -26,6 +31,7 @@
       } catch (e) {
         root.setAttribute('data-theme', next);
       }
+      document.dispatchEvent(new CustomEvent('site-theme-change', { detail: next }));
     });
   })();
 </script>
