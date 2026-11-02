@@ -5,17 +5,18 @@
 
 :root {
 
-  --main-color-1: #FE7F9B;
-  --text-color-1: rgba(255, 255, 255, 0.8);
+  // accent: links, tags, highlights. deep rose so it reads on the blush background (~5:1)
+  --main-color-1: #c2185b;
+  --text-color-1: #fff;
 
   // i don't know where this is used
   --main-color-2: #ff006a;
   --text-color-2: rgba(255, 255, 255, .8);
 
-  // header and footer colors
+  // header and footer colors: dark plum text on pink (~8:1)
   --main-color-3: #FFA6AF;
-  --text-color-3: #FEEEEC;
-  --header-link-color: #feeeec;
+  --text-color-3: #3b1f28;
+  --header-link-color: #8a1240;
 
   --main-color-theme-light: rgba(0, 0, 0, .8);
   --main-color-theme-dark: rgba(255, 255, 255, .8);
@@ -28,15 +29,17 @@
   --text-color-theme-light: #222;
   --text-color-theme-light-l: #888;
 
-  --text-color-theme-dark: rgba(44, 44, 44, 0.7);
-  --text-color-theme-dark-d: var(--text-color-theme-dark);
-  --text-color-theme-dark-l: var(--text-color-theme-dark);
+  // solid warm greys instead of translucent grey: headings ~13:1, body ~9:1, muted ~4.6:1
+  --text-color-theme-dark: #4a3f43;
+  --text-color-theme-dark-d: #2e2428;
+  --text-color-theme-dark-l: #75696d;
 
   --text-color-d: var(--text-color-theme-dark-d);
   --text-color: var(--text-color-theme-dark);
   --text-color-l: var(--text-color-theme-dark-l);
 
-  --text-background-color: rgba(255, 255, 255, .05);
+  // cards, code blocks, facts panel: a lighter sheet on the blush page
+  --text-background-color: rgba(255, 255, 255, .55);
 
   // header and footer colors
   --header-text-color: var(--text-color-3);
@@ -46,9 +49,9 @@
   --footer-background: var(--main-color-3);
 
   // border and shadow colors
-  --border-color: rgba(44, 44, 44, 0.44);
+  --border-color: rgba(59, 31, 40, 0.25);
   --border-color-l: var(--border-color);
-  --decorate-color: rgba(255, 255, 255, .1);
+  --decorate-color: rgba(59, 31, 40, .08);
   --mask-color: rgba(0, 0, 0, .9);
   --select-color: rgba(254, 127, 155, 0.43);
 
