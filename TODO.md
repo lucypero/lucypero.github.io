@@ -15,10 +15,6 @@ Site stays semi-anonymous: no LinkedIn, no past employers/jobs. Recruiters arriv
   - [ ] Voidcrawl: what the game is, who did what
   - [ ] lucyfmt: how it works, editor integration
 - [ ] About: other languages to list (HLSL, Python...?)
-- [ ] Delete unused `assets/images/lucynes/megaman6.png` (optional)
-
-## Claude
-- [ ] Email + GitHub links on the showcase page
 
 ## Release
 - [ ] Review the `refactor` branch locally (facts panel, cards on phone width)
