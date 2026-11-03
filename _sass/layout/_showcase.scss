@@ -86,7 +86,7 @@
     background-color: var(--text-background-color);
     border: 1px solid var(--border-color);
     border-radius: map-get($base, border-radius);
-    transition: transform map-get($animation, duration);
+    transition: transform map-get($animation, duration), border-color map-get($animation, duration);
 
     // the theme underlines links on hover with a more specific selector
     &,
@@ -97,6 +97,7 @@
     &:hover,
     &:focus {
       transform: scale(1.03);
+      border-color: var(--main-color-1);
     }
   }
 
