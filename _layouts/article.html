@@ -34,7 +34,9 @@ type: article
     var script = document.createElement('script');
     script.src = 'https://utteranc.es/client.js';
     script.setAttribute('repo', 'lucypero/lucypero.github.io');
-    script.setAttribute('issue-term', 'title');
+    // fixed term rather than 'title': the existing comment issues are named after the old site title
+    {%- include snippets/get-article-title.html article=page %}
+    script.setAttribute('issue-term', {{ __return | append: " - Lucy's Blog" | jsonify }});
     script.setAttribute('label', 'comment');
     script.setAttribute('theme', utterancesTheme(window.siteTheme()));
     script.setAttribute('crossorigin', 'anonymous');
